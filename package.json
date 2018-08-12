@@ -8,15 +8,14 @@
     "npm": "6.3.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "preinstall": "npm install pm2 -g && install pm2-logrotate",
+    "start": "pm2-runtime.server.js -i 0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
-    "cloudinary": "^1.11.0",
     "compression": "^1.7.3",
     "connect-mongo": "^2.0.1",
     "cookie-parser": "^1.4.3",
