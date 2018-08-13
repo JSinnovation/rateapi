@@ -57,9 +57,9 @@ app.use('/api', file);
     console.log('Server running on port 3000');
 }); */
 
-
-
+http.createServer(onRequest).listen(process.env.PORT || 3000)
+/* 
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server running on port "+ process.env.PORT);
 }); 
-
+ */
