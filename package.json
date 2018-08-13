@@ -1,5 +1,5 @@
 {
-  "name": "rateapi",
+  "name": "ratingzapi",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "preinstall": "npm install pm2 -g && pm2 install pm2-logrotate",
-    "start": "pm2-runtime.server.js -i 0"
+    "start": "pm2-runtime server.js -i 0"
   },
   "author": "",
   "license": "ISC",

@@ -16,6 +16,7 @@ mongoose.connect(process.env.MONGODB);
 
 app.use(helmet());
 app.use(compression);
+
 //adds the middleware helmet and compression
 
 require('./passport/passport-local');
