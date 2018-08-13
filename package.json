@@ -8,10 +8,9 @@
     "npm": "6.3.0"
   },
   "scripts": {
-    
+    "start": "node ./node_modules/.bin/pm2-runtime server.js -i max"
 
-    "start": "node ./node_modules/.bin/pm2-runtime app.js -i max"
-  },
+      },
   "author": "",
   "license": "ISC",
   "dependencies": {
