@@ -33,8 +33,8 @@ app.use((req, res, next)  => {
 
 app.use(express.static('public'));
 app.use(cookieParser());
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({limit: "50mb", extended: true, parameterLimit:50000}));
+app.use(bodyParser.json({limit: "50mb"}));
 
 app.use(session({
     secret: process.env.SECRET,
@@ -53,8 +53,13 @@ app.use('/api', user);
 app.use('/api', company);
 app.use('/api', file);
 
-app.listen(process.env.PORT || 3000, () => {
+/* app.listen(process.env.PORT || 3000, () => {
     console.log('Server running on port 3000');
+}); */
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
 /* 
 app.listen(process.env.PORT || 3000, function(){
