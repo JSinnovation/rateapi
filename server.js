@@ -11,7 +11,7 @@ const compression = require('compression');
 
 
 const app = express();
-const port = process.env.PORT || 3000;
+
  
 
 mongoose.Promise = global.Promise; 
@@ -54,15 +54,18 @@ const file = require('./routes/fileRoute');
 app.use('/api', user);
 app.use('/api', company);
 app.use('/api', file);
-/* 
-app.listen(process.env.PORT || 3000, () => {
+const host = '0.0.0.0';
+const port = process.env.PORT || 3000;
+app.listen(port, host, function() {
+    console.log("Server started.......");
+  });
+/* app.listen(process.env.PORT || 3000, () => {
     console.log('Server running on port 3000');
 });  
- */
+  */
 
 /* 
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server running on port "+ process.env.PORT);
 }); 
  */
-app.listen(port, () =>console.log(`Listening on port ${port}`));
