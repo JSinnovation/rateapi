@@ -62,12 +62,7 @@ const file = require('./routes/fileRoute');
 
 app.use('/api', user);
 app.use('/api', company);//use middleware
- app.use('/api', file); 
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
-})
-
- 
+app.use('/api', file); 
 
 app.listen(process.env.PORT || 3000, () => {
     console.log('Server running on port 3000'); 
