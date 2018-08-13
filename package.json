@@ -8,8 +8,10 @@
     "npm": "6.3.0"
   },
   "scripts": {
-    "preinstall": "npm install pm2 -g && pm2 install pm2-logrotate",
-    "start": "pm2-runtime server.js -i 0"
+    //"preinstall": "npm install pm2 -g && pm2 install pm2-logrotate",
+   // "start": "pm2-runtime server.js -i 0"
+
+    "start": "node ./node_modules/.bin/pm2-runtime app.js -i max"
   },
   "author": "",
   "license": "ISC",
