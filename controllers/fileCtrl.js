@@ -1,6 +1,6 @@
 const User = require('../models/user');
 const Company = require('../models/company')
-const cloudinary = require('cloudinary');
+const cloudinary = require('cloudinary-core');
 
 cloudinary.config({ 
     cloud_name: process.env.CLOUD_NAME, 

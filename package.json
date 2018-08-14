@@ -8,15 +8,15 @@
     "npm": "6.3.0"
   },
   "scripts": {
-   
     "preinstall": "npm install pm2 -g && pm2 install pm2-logrotate",
     "start": "pm2-runtime server.js -i 0"
-      },
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
+    "cloudinary-core": "^2.5.0",
     "compression": "^1.7.3",
     "connect-mongo": "^2.0.1",
     "cookie-parser": "^1.4.3",
