@@ -1,9 +1,9 @@
 const User = require('../models/user');
 const Company = require('../models/company')
-// const cloudinary = require('cloudinary-core');
+//const cloudinary = require('cloudinary-core');
 const cloudinary = require(`cloudinary`);
 
-var cloudinary = require('cloudinary');
+
 
 // Using the config function
 /* var cl = cloudinary.Cloudinary.new();
