@@ -16,7 +16,7 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
-    "cloudinary-core": "^2.5.0",
+    "cloudinary": "^1.11.0",
     "compression": "^1.7.3",
     "connect-mongo": "^2.0.1",
     "cookie-parser": "^1.4.3",
