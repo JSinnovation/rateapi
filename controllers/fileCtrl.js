@@ -24,7 +24,7 @@ cloudinary.uploader.upload(req.body.image, (result) => {
 const savedData = async () => {
   if(req.body.image){
     await User.update({
-      '_id': req.body.User._id
+      '_id': req.body.user._id
     }, {
       "imageId":result.public_id,
       "imageVersion":result.version
